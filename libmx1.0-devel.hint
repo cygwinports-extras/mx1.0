@@ -1,0 +1,9 @@
+category: X11
+requires: libmx1.0_2 libclutter1.0-devel libcogl-devel libdbus-glib_1-devel libgdk_pixbuf2.0-devel libglib2.0-devel libpango1.0-devel libstartup-notification1-devel libX11-devel libXrandr-devel
+external-source: mx1.0
+sdesc: "Clutter-based GUI widget toolkit (development)"
+ldesc: "Mx is a widget toolkit using Clutter that provides a set of 
+standard interface elements, including buttons, progress bars, scroll 
+bars and others. It also implements some standard managers. One other 
+interesting feature is the possibility setting style properties from a 
+CSS format file."
