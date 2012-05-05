@@ -15,3 +15,5 @@ girepository_Mx1_0_CONTENTS="usr/*/gir*/Mx-1.0.*"
 #DIFF_EXCLUDES="mx-*.h .gitignore README"
 
 CYGCONF_ARGS="--with-winsys=x11 --disable-gtk-widgets"
+
+KEEP_LA_FILES="none"
