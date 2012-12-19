@@ -1,0 +1,30 @@
+--- origsrc/mx/mx/mx-deform-texture.c	2012-12-18 23:14:10.000000000 -0600
++++ src/mx/mx/mx-deform-texture.c	2012-12-18 23:55:36.364046100 -0600
+@@ -29,6 +29,7 @@
+  * deformation effects with a texture.
+  */
+ 
++#include <GL/gl.h>
+ #include "mx-deform-texture.h"
+ #include "mx-offscreen.h"
+ #include "mx-private.h"
+--- origsrc/mx/mx/mx-texture-frame.c	2012-12-18 23:14:10.000000000 -0600
++++ src/mx/mx/mx-texture-frame.c	2012-12-18 23:55:20.508139200 -0600
+@@ -34,6 +34,7 @@
+ #endif
+ 
+ #include <cogl/cogl.h>
++#include <GL/gl.h>
+ 
+ #include "mx-texture-frame.h"
+ #include "mx-private.h"
+--- origsrc/mx/tests/Makefile.am	2012-12-18 23:14:10.000000000 -0600
++++ src/mx/tests/Makefile.am	2012-12-19 00:08:34.448550000 -0600
+@@ -10,6 +10,7 @@ endif
+ 
+ INCLUDES = \
+ 	-I$(top_srcdir) \
++	-I$(top_builddir)/mx \
+ 	-I$(top_builddir)
+ 
+ noinst_PROGRAMS = 			\
