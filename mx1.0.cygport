@@ -1,19 +1,22 @@
-GIT_URI="git://github.com/clutter-project/mx.git"
-GIT_TAG=${VERSION}
-inherit gnome2 git
+inherit gnome2
 
 NAME="mx1.0"
 VERSION=1.4.7
-RELEASE=4
+RELEASE=5
 CATEGORY="Libs"
 SUMMARY="Clutter-based GUI widget toolkit"
 DESCRIPTION="Mx is a widget toolkit using Clutter that provides a set of
 standard interface elements, including buttons, progress bars, scroll bars
 and others. It also implements some standard managers. One other interesting
 feature is the possibility setting style properties from a CSS format file."
-HOMEPAGE="http://blogs.gnome.org/clutter/"
+HOMEPAGE="https://github.com/clutter-project/mx/"
+SRC_URI="https://github.com/clutter-project/mx/archive/${VERSION}/mx-${VERSION}.tar.gz"
+SRC_DIR="mx-${VERSION}"
 
-PATCH_URI="1.4.7-clutter1-12.patch"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/libmx.git/plain/0001-Replace-GL-data-types-with-equivalent-glib-types.patch?h=f21
+	1.4.7-vpath.patch
+"
 
 PKG_NAMES="libmx1.0_2 libmx1.0-common libmx1.0-devel girepository-Mx1.0"
 libmx1_0_2_SUMMARY="${SUMMARY} (runtime)"

@@ -1,0 +1,10 @@
+--- origsrc/mx/tests/Makefile.am	2012-12-18 23:14:10.000000000 -0600
++++ src/mx/tests/Makefile.am	2012-12-19 00:08:34.448550000 -0600
+@@ -10,6 +10,7 @@ endif
+ 
+ INCLUDES = \
+ 	-I$(top_srcdir) \
++	-I$(top_builddir)/mx \
+ 	-I$(top_builddir)
+ 
+ noinst_PROGRAMS = 			\
